@@ -1,0 +1,11 @@
+# Versions are the ones the pipeline was run with (Python 3.10, Linux/WSL).
+# usd-core and numpy are needed by every script.
+usd-core==25.11
+numpy==1.23.0
+
+# tensorflow and waymo-open-dataset are needed only by
+# select_safety_critical_scenarios.py (TFRecord scan) and by
+# waymo_to_usd.py (scenario_pb2 protobuf parsing).
+# waymo-open-dataset publishes Linux wheels only.
+tensorflow==2.12.0
+waymo-open-dataset-tf-2-12-0==1.6.4
